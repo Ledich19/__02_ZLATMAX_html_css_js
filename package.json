@@ -1,0 +1,51 @@
+{
+  "name": "john__html_css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build --build",
+    "svgSprive": "gulp svgSprive",
+    "deploy": "gulp deployFTP --build",
+    "zip": "gulp deployZIP --build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "lates",
+    "del": "lates",
+    "fs": "^0.0.1-security",
+    "gulp": "lates",
+    "gulp-autoprefixer": "lates",
+    "gulp-clean-css": "lates",
+    "gulp-file-include": "lates",
+    "gulp-fonter": "lates",
+    "gulp-group-css-media-queries": "lates",
+    "gulp-if": "lates",
+    "gulp-imagemin": "lates",
+    "gulp-newer": "lates",
+    "gulp-notify": "lates",
+    "gulp-plumber": "lates",
+    "gulp-rename": "lates",
+    "gulp-replace": "lates",
+    "gulp-sass": "lates",
+    "gulp-svg-sprite": "lates",
+    "gulp-ttf2woff2": "lates",
+    "gulp-util": "lates",
+    "gulp-version-number": "lates",
+    "gulp-webp": "lates",
+    "gulp-webp-html-nosvg": "lates",
+    "gulp-webpcss": "lates",
+    "gulp-zip": "lates",
+    "sass": "lates",
+    "vinyl-ftp": "lates",
+    "webp-converter": "2.2.3",
+    "webpack": "lates",
+    "webpack-stream": "lates"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "lates"
+  }
+}

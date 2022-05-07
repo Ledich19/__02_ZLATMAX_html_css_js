@@ -1,0 +1,28 @@
+@mixin font-size($value) {
+  font-size: $value * 1px;
+  font-size: calc($value / 16) * 1rem;
+}
+
+@function rem($value) {
+  $remValue: calc($value / 16) * 1rem;
+  @return $remValue;
+}
+
+@function em($value1 , $value2) {
+  $remValue: calc($value1 / $value2) * 1em;
+  @return $remValue;
+}
+
+//Адаптивное отзывчивое свойство=========
+
+
+@mixin adaptiveValue($property, $startSize, $minSize) {
+  $addSize: calc($startSize - $minSize);
+  #{$property}: $startSize + px;
+  @media (max-width: #{$maxWidhtConteiner + px}) {
+    --variable-width: 100vw;
+    $decision: calc(#{$minSize}px + #{$addSize} * ((var(--variable-width) - 320px) / #{$maxWidhtConteiner - 320} ));
+    #{$property}: $decision;
+  }
+}
+
