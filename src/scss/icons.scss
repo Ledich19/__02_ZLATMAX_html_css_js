@@ -24,11 +24,9 @@
         display: block;
     }
 }
+
 ._icon-mail:before {
   content: "\e902";
-}
-._icon-cart:before {
-  content: "\e90b";
 }
 ._icon-rouble:before {
   content: "\e900";
@@ -48,15 +46,21 @@
 ._icon-logo:before {
   content: "\e908";
 }
-._icon-user:before {
+._icon-personal-cabinet:before {
   content: "\e909";
 }
 ._icon-phone:before {
   content: "\e90a";
+}
+._icon-cart:before {
+  content: "\e903";
 }
 ._icon-clock:before {
   content: "\e94e";
 }
 ._icon-search:before {
   content: "\e986";
+}
+._icon-arrow-left:before {
+  content: "\ea40";
 }
